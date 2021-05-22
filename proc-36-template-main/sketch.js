@@ -41,17 +41,17 @@ function draw() {
   foodObj.display();
 
   //write code to read fedtime value from the database 
-//hour=data.val();
+hour();
   
  
   //write code to display text lastFed time here
-  //if(lastFed>=12){
-  //  text("Last Feed: " + PM,350,30)
- // }else if(lastFed==0){
-  //text("Last feed:12 AM",350,30)
- // }else {
-   // text("Last feed:"+ AM,350,30)
- // }
+  if(lastFed>=12){
+   text("Last Feed: " + PM,350,30)
+  }else if(lastFed==0){
+  text("Last feed:12 AM",350,30)
+  }else {
+   text("Last feed:"+ AM,350,30)
+ }
  
  
   drawSprites();
